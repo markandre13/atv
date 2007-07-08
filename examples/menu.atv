@@ -1,0 +1,45 @@
+/*
+ * menubar definition in attribute-type-value format
+ */
+
+menu {
+  entry { name="file" label="File"
+    entry { name="new" label="New" shortcut="Alt+N" }
+    entry { name="open" label="Open" shortcut="Alt+O" }
+    entry { name="save" label="Save" shortcut="Alt+S" }
+    entry { name="save_as" label="Save As..." shortcut="Alt+A" }
+    entry { name="close" label="Close" }
+    // insertion-point{}
+    entry { name="|edit|try" }
+    // separator{}
+    entry { name="quit" label="Quit" shortcut="Alt+F4" icon="exit.png" }
+  }
+  entry { name="edit" label="Edit"
+    entry { name="undo" label="Undo" }
+    entry { name="redo" label="Redo" }
+    // separator{}
+    entry { name="cut" label="Cut" shortcut="Alt+X" icon="editcut.png" }
+    entry { name="copy" label="Copy" shortcut="Alt+C" icon="editcopy.png" }
+    entry { name="paste" label="Paste" shortcut="Alt+V" icon="editpaste.png" }
+    entry { name="delete" label="Delete" }
+  }
+  entry { name="font" label="Font"
+    entry { name="face" label="Face"
+      entry { name="sans" label="Sans"}
+      entry { name="sans-serif" label="Sans-Serif" }
+      entry { name="typewriter" label="Monospaced" }
+    }
+    entry { name="size" label="Size"
+      entry { name="8pt" label="Tiny" }
+      entry { name="10pt" label="Small" }
+      entry { name="12pt" label="Normal" }
+      entry { name="16pt" label="Large" }
+    }
+  }
+  // insertion-point{}
+  // fill{}
+  entry { name="help" label="Help"
+    entry { name="manual" label="Show Manual" }
+    entry { name="about" label="About" }
+  }
+}

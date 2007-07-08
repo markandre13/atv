@@ -1,0 +1,10 @@
+Attribute-Type-Value Object Language Parser
+Copyright (C) 2001-2007 by Mark-André Hopf <mhopf@mark13.org>
+The code is under BSD license.
+
+src/		the source
+examples/	various example programs
+  menu.cc	parsing an ATV file (push style)
+  poll.cc	parsing an ATV file (poll style)
+  graphic.cc	object serialization example
+	

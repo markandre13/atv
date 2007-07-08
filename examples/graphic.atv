@@ -1,0 +1,59 @@
+toad::TGGroup {
+  toad::TGRectangle { }
+  toad::TGRectangle { }
+}
+
+toad::TGText {
+/*
+  text = BASE64 {
+   "Vm90ZSBSYWxwaCJOYWRlciEA"
+  }
+*/
+//  text = "Vote Ralph\"Nader!"
+/*
+  text = "This is a very long text, that I wrote to test the ability
+of my BASE64 routines to handle this case."
+*/
+  text = BASE64 {
+    "VGhpcyBpcyBhIHZlcnkgbG9uZyB0ZXh0LCB0aGF0IEkgd3JvdGUgdG8gdGVzdCB0"
+    "aGUgYWJpbGl0eQpvZiBteSBCQVNFNjQgcm91dGluZXMgdG8gaGFuZGxlIHRoaXMg"
+    "Y2FzZS4="
+  }
+                
+  fillcolor = NULL { }
+}
+
+//toad::TRGB { 255 255 255 }
+
+/*
+toad::TGRectangle {
+
+  // this should be a bug as linecolors type is fixed and pre-allocated
+  // linecolor=toad::TRGBA { 1 2 3 4 }
+  
+  // okay
+  //linecolor=toad::TRGB { 1 2 3 }
+  
+  // okay
+  linecolor= { 1 2 3 }
+  
+  fillcolor=toad::TRGBA { 5 6 7 8 }
+  x=10
+  y=11
+  w=20
+  h=50
+  filled=true
+}
+*/
+
+/*
+toad::TGRectangle {
+  filled=false
+  x=110
+  y=111
+  w=120
+  h=150
+  filled = true;
+  fillcolor=toad::TRGB { 0 128 255 }
+}
+*/
